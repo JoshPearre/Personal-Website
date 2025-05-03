@@ -1,0 +1,589 @@
+/* Global Styles */
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.button::before{
+  background: #000;
+    border-radius: inherit;
+    bottom: 0;
+    -webkit-box-shadow: 0 .5em 1.25em #000;
+    box-shadow: 0 .5em 1.25em #000;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: opacity .2sease;
+    transition: opacity .2sease;
+    z-index: -1;
+}
+.button {
+  --font-weight: 500;
+  background-color: var(--clr, var(--clr-primary-400));
+  border: 0;
+  border-radius: 100vw;
+  -webkit-box-shadow: 0 .125em .5em rgba(0, 0, 0, .15);
+  box-shadow: 0 .125em .5em rgba(0, 0, 0, .15);
+  color: var(--clr-neutral-100);
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--fs-300);
+  letter-spacing: .04em;
+  line-height: 1;
+  padding: .95em 1.75em .85em;
+  position: relative;
+  text-decoration: none;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform .2sease;
+  transition: -webkit-transform .2sease;
+  transition: transform .2sease;
+  transition: transform .2sease, -webkit-transform .2sease;
+}
+*, ::after, ::before{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 62.5rem;
+  padding: 0 1.5rem;
+  
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Soft light background for a clean look */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: #2d3436; /* Darker tone for header text */
+    font-weight: bold;
+  }
+  
+  /* Header */
+  header {
+    background-color: #67c4db; /* blue color for BentoBox theme */
+    color: #fff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid #0bb2db;
+  
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  #header-move{
+    margin-left: 0px;
+  }
+  .header{
+    font-size: 2.8rem;
+    font-family: 'Tahoma', sans-serif;
+    margin: 0; /* Remove default margins to control positioning */
+    text-align: center; /* Center the name */
+    flex-grow: 1; /* Allow the name to take up available middle space */
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #2c3e50;
+  }
+
+  .social-icons{
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+
+  }
+  .social_media_logo{
+    transition: 0.3s ease;
+    width: 35px;
+    height: auto;
+    margin-left: 15px;
+  }
+
+  .social_media_logo:hover {
+    transform: scale(1.2);
+  }
+ 
+.brand_logo{
+  width: 200px;
+  height: auto;
+}
+
+.header_div{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-imgs{
+display: flex;
+align-items: center;
+}
+
+  /* Main Section */
+  main {
+    padding: 3rem 2rem;
+  }
+  
+  /* Intro Section */
+  .intro {
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+  }
+  
+  .intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0bb2db;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  #header_intro{
+    margin-bottom: 1rem;
+    font-size: 1.45rem;
+    text-align: center;
+
+  }
+
+  /* main Section */
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .bento-box {
+    width: 100%;
+  height: 40vh; /* Adjust this based on how tall you want the div */
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .bento-box:hover {
+    transform: translateY(-10px); /* Subtle hover effect */
+  }
+  
+  .bento-box h3 {
+    font-size: 1.8rem;
+    color: #0bb2db;
+    margin-bottom: 1rem;
+  }
+  
+  .bento-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bento-box ul li {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .know_me_pics{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the image covers the whole div without distortion */
+  object-position: center; /* Ensures the image is centered */
+  }
+
+  .instagram{
+    background-image: linear-gradient(to left, #0bb2db, lightskyblue ); /* Gradient colors */
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    color: white;
+    font-size: x-large;
+
+  }
+  .center-text{
+    text-align: center;
+  }
+
+   .get-to-know-me{
+    display: flex;
+    background-color: lightgreen;
+    margin-bottom: 50px;
+   }
+
+   .right-text{
+      flex: 1;
+      padding: 10px;
+   }
+
+   .left-img{
+    flex: 1;
+    height: 200px;
+    width: 300px;
+    border: 1px solid #ccc;
+    display: block;
+    overflow: hidden;
+   }
+
+   .resume-section{
+    background-image: linear-gradient(to right, slategrey, lightgrey); /* Gradient colors */
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    color: white;
+    font-size: x-large;
+   }
+   .link{
+    color: #000;
+    transition: font-size 0.3s ease, transform 0.3s ease;;
+    text-decoration: none;
+    padding: 10px 20px; /* Adds padding around the text */
+    border: 2px dashed #007BFF; /* Adds a border around the link */
+    border-radius: 50%; /* Makes the border round */
+    display: inline-block;
+    
+   }
+   .link:hover{
+    font-size: 1.2em;
+    transform: scale(1.1); /* Slightly enlarges the circle on hover */
+
+   }
+.contact-button-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: purple; /* Keep the purple background */
+  color: white; /* Add this to make the text white */
+  text-decoration: none; /* Change this to none to remove the underline */
+  border-radius: 5px;
+  display: inline-block; /* Ensure it behaves like a block for padding but inline for text flow */
+}
+
+.overlap-container-right{
+  position: relative;
+  width: 700px;
+  height:400px;
+  margin-left: auto;
+  padding-bottom: 250px;
+
+}
+
+.overlap-image-div-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%; /* Adjust as needed, 50% means half the container width */
+  height: auto;
+  z-index: 1; /* Ensure it's behind the text div */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+.overlap-image-div-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain, fill, etc. */
+}
+.overlap-text-div-right {
+  position: absolute;
+  top: 70px; /*adjust as needed*/
+  left: 2%; /*adjust as needed*/
+  width: 50%; /*adjust as needed*/
+  padding: 20px;
+  background-color: rgba(230, 230, 230, 0.6); /* Semi-transparent background */
+  z-index: 2; /* Ensure it's on top of the image div */
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+.overlap-container-left{
+  position: relative;
+  width: 700px;
+  height:400px;
+  margin-right: auto;
+  padding-bottom: 250px;
+
+}
+.overlap-image-div-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%; /* Adjust as needed, 50% means half the container width */
+  height: auto;
+  z-index: 1; /* Ensure it's behind the text div */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+.overlap-image-div-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain, fill, etc. */
+}
+.overlap-text-div-left {
+  position: absolute;
+  top: 70px; /*adjust as needed*/
+  right: 2%; /*adjust as needed*/
+  width: 50%; /*adjust as needed*/
+  padding: 20px;
+  background-color: rgba(230, 230, 230, 0.6); /* Semi-transparent background */
+  z-index: 2; /* Ensure it's on top of the image div */
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+  /* About Section */
+  .about {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  #about_index{
+    margin-top: 100px;
+  }
+  #about_mystory{
+    margin-top: 550px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+/*Contact section*/
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.form-input {
+  display: block;
+}
+
+.form-error {
+  color: red;
+}
+
+/*contact section test*/
+
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #0bb2db;
+    color: #fff;
+    border-top: 5px solid #0bb2db;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+
+  /* Responsive Design */
+
+/* Responsive Design for My Story Page */
+@media (max-width: 1330px) {
+  .my-story-page .overlap-container-left,
+  .my-story-page .overlap-container-right{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: auto;
+    padding-bottom: 0; /* Remove padding-bottom that was for overlap */
+  }
+  .my-story-page .overlap-image-div-left,
+  .my-story-page .overlap-image-div-right{
+    position: static;
+    width: 100%;
+    height: auto;
+
+  }
+  .my-story-page .overlap-image-div-left img,
+  .my-story-page .overlap-image-div-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px; /* Prevent extra space */
+  }
+  .my-story-page .overlap-text-div-left,
+  .my-story-page .overlap-text-div-right {
+    position: static;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(230, 230, 230, 0.8); /* Adjust transparency if needed */
+  }
+  #about_mystory{
+    margin-top: 75px;
+  }
+}
+  @media (max-width: 950px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #about_mystory{
+      margin-top: 75px;
+    }
+  
+    .bento-box {
+      width: 80%;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .intro h2 {
+      font-size: 2rem;
+    }
+  
+    .bento-box h3 {
+      font-size: 1.6rem;
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Responsive Design for Header */
+@media (max-width: 768px) {
+  .header_div {
+      flex-direction: column; /* Stack logo, name, and social icons vertically */
+      text-align: center; /* Center all elements */
+  }
+
+  .brand_logo {
+      width: 150px;
+      margin-bottom: 10px; /* Add space below the logo */
+  }
+
+  .header {
+      font-size: 2.2rem; /* Smaller title on smaller screens */
+      margin-left: 0; /* Ensure no left margin */
+  }
+
+  .right-imgs {
+      margin-top: 10px; /* Add space above social icons */
+  }
+
+  .social_media_logo {
+      margin-left: 10px; /* Adjust spacing for stacked icons */
+      margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  
+  .header {
+      text-align: center; /* Keep the name centered in the middle on larger screens */
+  }
+  #header-move{
+    margin-left: -120px; /* Add the left margin for larger screens */
+
+  }
+}
+
+  
