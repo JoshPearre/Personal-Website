@@ -254,6 +254,18 @@ align-items: center;
     font-size: x-large;
 
   }
+.linkedin{
+    background-image: linear-gradient(to left, #9f1a1a, rgb(208, 77, 116) ); /* Gradient colors */
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    color: white;
+    font-size: x-large;
+
+  }
+
   .center-text{
     text-align: center;
   }
