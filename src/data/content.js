@@ -39,6 +39,9 @@ export const images = {
   brothers: "3-brothers.jpg",
   greece: "greece.jpg",
   gradHS: "hs-graduation.jpg",
+  gradCollege: "grad-1.jpg",   // cap & gown, "Scholar-Athlete" stole, UMHB stadium
+  gradStadium: "grad-2.jpg",   // shirt & tie + stole on the field
+  gradPortrait: "grad-3.jpg",  // reflective profile portrait
 };
 
 export const hero = {
@@ -101,6 +104,16 @@ export const story = {
       imageAlt: "Josh with his brothers",
       body:
         "Trusting the process taught me how to build — quietly, consistently, rep after rep — long before I saw the payoff. I carried that same patience into computer science at UMHB, balancing roughly 30 hours a week of NCAA basketball with a full course load and still earning a 3.862 GPA, the Provost Honors Roll, and the Dean's List. Off the court, I started turning that discipline into real systems: troubleshooting hardware and networks as an IT Assistant, building my first web apps as a development intern, and shipping relational databases and CRUD tools from the ground up. Now, as Lead AI Solutions Developer at Dakar Projects, I help small businesses put AI to work — I've built an AI receptionist, an operations dashboard, and automated document workflows using Python, Flask, Docker, and local LLM agents. The court taught me to trust the process; software is where I get to build it. No Joshing around.",
+    },
+    {
+      id: "graduation",
+      eyebrow: "05 — THE WALK",
+      title: "The Walk",
+      image: "gradCollege",
+      imageAlt:
+        "Josh in his cap and gown wearing a 'Scholar-Athlete' stole at UMHB's stadium on graduation day, May 2026",
+      body:
+        "In May 2026 I walked across the stage at the University of Mary Hardin-Baylor and turned the tassel — a B.S. in Computer Science, and the proof that the process works. I crossed that field in a 'Scholar-Athlete' stole, which is really the whole story in two words: four years of balancing a college basketball career with a full course load, and finishing with a 3.862 GPA, the Provost Honors Roll, and the Dean's List to show for it. Standing in an empty stadium in my cap and gown, it hit me that every early rep, every late night, and every 'trust the process' had been building to this moment. Graduation closed the student-athlete chapter and opened the next one — building AI systems full-time at Dakar Projects. It's the most recent milestone in the story, and the one that ties all the others together. No Joshing around.",
     },
   ],
 };
