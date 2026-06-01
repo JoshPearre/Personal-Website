@@ -1,0 +1,21 @@
+{
+  "name": "josh-pearre-tier4-expressive",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Joshua Pearre — Tier 4 (Expressive Brand) personal site preview.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^11.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

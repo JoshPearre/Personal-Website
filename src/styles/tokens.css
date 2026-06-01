@@ -1,0 +1,25 @@
+/* COURT & CONSOLE — shared brand tokens (Tier 2). Same values across all tiers. */
+:root {
+  --ink:#0E1116; --ink-2:#131722; --surface:#171B22; --surface-2:#1E2430;
+  --paper:#F6F7F9; --paper-2:#FFFFFF;
+  --primary:#2D6CF6; --primary-deep:#1E4FD0; --primary-soft:rgba(45,108,246,.10);
+  --accent:#F5872B; --accent-deep:#C85B16; --accent-soft:rgba(245,135,43,.12);
+  --success:#27B583;
+  --text:#1A1F27; --text-on-dark:#E8ECF2; --muted:#5A6473; --muted-on-dark:#9AA4B2;
+  --line:#E3E7EC; --line-on-dark:#2A313B;
+  --font-display:"Space Grotesk",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+  --radius:18px; --radius-sm:12px; --radius-pill:999px; --container:1160px;
+  --shadow-sm:0 1px 2px rgba(14,17,22,.06),0 2px 8px rgba(14,17,22,.05);
+  --shadow-md:0 10px 30px rgba(14,17,22,.10); --shadow-lg:0 24px 60px rgba(14,17,22,.16);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--primary);text-decoration:none}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);letter-spacing:-.01em}
+::selection{background:var(--accent);color:#fff}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
