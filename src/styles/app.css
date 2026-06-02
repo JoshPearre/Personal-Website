@@ -50,12 +50,12 @@ h1,h2,h3,h4{color:#fff}
 .hero4__photo{position:absolute;top:clamp(3.5rem,10vh,7rem);right:clamp(0rem,2vw,1.5rem);width:min(33%,390px);z-index:1}
 .hero4__photo img{width:100%;border-radius:var(--radius);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 1px rgba(245,135,43,.3);aspect-ratio:4/5;object-fit:cover}
 @media(min-width:901px){.hero4__inner{padding-right:36%}}
-.hero4__stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem;padding:1.4rem;background:rgba(255,255,255,.04);border:1px solid var(--line-on-dark);border-radius:var(--radius);backdrop-filter:blur(8px)}
-.hero4__stats .stat{text-align:center;border-left:1px solid var(--line-on-dark)}
+.hero4__stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem;padding:2rem 1.6rem;background:rgba(255,255,255,.04);border:1px solid var(--line-on-dark);border-radius:var(--radius);backdrop-filter:blur(8px)}
+.hero4__stats .stat{text-align:center;padding:.4rem 0;border-left:1px solid var(--line-on-dark)}
 .hero4__stats .stat:first-child{border-left:none}
-.hero4__stats .stat b{display:block;font-family:var(--font-mono);font-weight:700;font-size:1.9rem;color:#fff}
-.hero4__stats .stat b .suffix{color:var(--accent);font-size:.95rem}
-.hero4__stats .stat span{font-size:.82rem;color:var(--muted-on-dark)}
+.hero4__stats .stat b{display:block;font-family:var(--font-mono);font-weight:700;font-size:2.6rem;line-height:1.1;color:#fff}
+.hero4__stats .stat b .suffix{color:var(--accent);font-size:1.1rem}
+.hero4__stats .stat span{font-size:.9rem;color:var(--muted-on-dark)}
 
 /* PINNED SCROLL STORY */
 .storyscroll{position:relative}

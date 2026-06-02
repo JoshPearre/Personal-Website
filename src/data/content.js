@@ -61,7 +61,6 @@ export const hero = {
     { value: "3.862", label: "College GPA", suffix: "/4.0" },
     { value: "4", label: "Years NCAA basketball", suffix: "yrs" },
     { value: "6", label: "Projects shipped", suffix: "+" },
-    { value: "4.2", label: "High-school GPA", suffix: "" },
   ],
 };
 
