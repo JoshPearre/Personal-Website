@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { asset } from "../lib/asset.js";
+import { asset, resumeUrl } from "../lib/asset.js";
 import { connect, profile, socials } from "../data/content.js";
 import Reveal from "./Reveal.jsx";
 
@@ -33,7 +33,7 @@ export default function Connect() {
             <div className="row"><span className="k">Email</span><a href={`mailto:${profile.email}`}>{profile.email}</a></div>
             <div className="row"><span className="k">Phone</span><a href={profile.phoneHref}>{profile.phone}</a></div>
             <div className="row"><span className="k">Based</span><span>{profile.location}</span></div>
-            <div className="row"><span className="k">Résumé</span><a href={`${import.meta.env.BASE_URL}resume/Joshua Pearre Resume.pdf`} target="_blank" rel="noopener">Download (PDF) ↗</a></div>
+            <div className="row"><span className="k">Résumé</span><a href={resumeUrl} target="_blank" rel="noopener">Download (PDF) ↗</a></div>
           </div>
           <div className="socials">
             {socials.map((s) => (

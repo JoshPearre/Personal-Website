@@ -14,7 +14,7 @@ export const profile = {
   email: "joshpearre@gmail.com",
   phone: "972-658-2149",
   phoneHref: "tel:+19726582149",
-  resume: "Joshua Pearre Resume.pdf", // lives in each project's /resume
+  resume: "joshua-pearre-resume.pdf", // lives in /public/resume
   siteUrl: "https://joshpearre.github.io/Personal-Website/",
   motto: "No Joshing around",
   values: "Resilience, tenacity, and perseverance.",
