@@ -22,13 +22,16 @@ export default function Skills() {
         ))}
       </div>
 
-      <Reveal className="certs">
-        {skills.certifications.map((c) => (
-          <div className="cert" key={c.title}>
-            <h4>{c.title}</h4>
-            <span>{c.issuer}</span>
-          </div>
-        ))}
+      <Reveal className="certs-block">
+        <h3 className="certs-title">{skills.certsHeading}</h3>
+        <div className="certs">
+          {skills.certifications.map((c) => (
+            <div className="cert" key={c.title}>
+              <h4>{c.title}</h4>
+              <span>{c.issuer}</span>
+            </div>
+          ))}
+        </div>
       </Reveal>
     </section>
   );

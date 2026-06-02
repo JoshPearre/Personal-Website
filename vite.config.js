@@ -1,10 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// base: './' makes the built dist/ portable — it works when opened from any
-// path (a static server, a GitHub Pages sub-folder, etc.). For a dedicated
-// GitHub Pages deploy, set base to '/<repo>/' instead.
+// Deployed to GitHub Pages at https://joshpearre.github.io/Personal-Website/,
+// so assets must resolve under the '/Personal-Website/' sub-path. The deploy
+// workflow lives in .github/workflows/deploy.yml.
 export default defineConfig({
   plugins: [react()],
-  base: "./",
+  base: "/Personal-Website/",
 });

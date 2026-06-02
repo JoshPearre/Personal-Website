@@ -110,7 +110,10 @@ h1,h2,h3,h4{color:#fff}
 .chips{display:flex;flex-wrap:wrap;gap:.45rem}
 .chip{font-family:var(--font-mono);font-size:.78rem;padding:.32rem .65rem;background:rgba(255,255,255,.04);border:1px solid var(--line-on-dark);border-radius:var(--radius-pill);color:var(--text-on-dark);transition:border-color .2s,color .2s,transform .2s}
 .chip:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
-.certs{margin-top:2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.certs-block{margin-top:2.5rem}
+.certs-title{color:#fff;font-size:1.05rem;font-weight:600;display:flex;align-items:center;gap:.5rem}
+.certs-title::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--accent)}
+.certs{margin-top:1rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .cert{background:var(--surface);border:1px solid var(--line-on-dark);border-radius:var(--radius-sm);padding:1.1rem 1.2rem}
 .cert h4{color:#fff;font-size:1rem;font-weight:600}
 .cert span{font-size:.84rem;color:var(--accent);font-family:var(--font-mono)}

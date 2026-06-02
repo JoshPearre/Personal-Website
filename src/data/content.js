@@ -208,6 +208,7 @@ export const skills = {
       ],
     },
   ],
+  certsHeading: "Certifications",
   certifications: [
     { title: "Machine Learning with Python", issuer: "Anaconda" },
     { title: "AI Test Automation Professional", issuer: "TestMu" },
@@ -266,21 +267,23 @@ export const timeline = {
     {
       dates: "Aug 2022 – May 2026",
       role: "NCAA Men's Basketball Student-Athlete",
-      org: "UMHB",
+      org: "Regis + UMHB",
       summary:
-        "A four-year college basketball career — ~30 hrs/week of training and competition alongside a full-time CS course load.",
+        "A four-year college basketball career across two schools — ~30 hrs/week of training and competition alongside a full-time CS course load.",
     },
     {
-      dates: "Aug 2022 – May 2026",
+      dates: "2022 – 2024",
+      role: "Computer Science",
+      org: "Regis University",
+      summary:
+        "Two years at Regis University, where the journey began — playing basketball while starting my computer science degree.",
+    },
+    {
+      dates: "2024 – 2026",
       role: "B.S. Computer Science — Graduated",
       org: "UMHB",
-      summary: "Graduated May 2026 · GPA 3.862/4.0 · Provost Honors Roll (2 sem) · Dean's List (4 sem).",
-    },
-    {
-      dates: "2022",
-      role: "Committed to play basketball",
-      org: "Regis University",
-      summary: "The first college commitment of the journey — the start of Chapter 2.",
+      summary:
+        "Transferred to UMHB and finished the degree — graduated May 2026 · GPA 3.862/4.0 · Provost Honors Roll (2 sem) · Dean's List (4 sem).",
     },
   ],
 };
